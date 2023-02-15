@@ -14,6 +14,11 @@ class TestEnglishToFrench(unittest.TestCase):
             english_to_french(None), ""
         )
 
+    def test3(self):
+        self.assertNotEqual(
+            english_to_french("Hello"), "Hello"
+        )
+
 
 class TestFrenchToEnglish(unittest.TestCase):
     def test1(self):
@@ -24,6 +29,11 @@ class TestFrenchToEnglish(unittest.TestCase):
     def test2(self):
         self.assertEqual(
             french_to_english(None), ""
+        )
+
+    def test3(self):
+        self.assertNotEqual(
+            french_to_english("Bonjour"), "Bonjour"
         )
 
 
